@@ -38,10 +38,10 @@ def pointer(marks):
     return grade_counter
 
 for i in subjects:
-    individual_subject_mark = float(input(f"Enter Marks for Subject {i}: "))
-    total += individual_subject_mark
+    subject_mark = float(input(f"Enter Marks for Subject {i}: "))
+    total += subject_mark
     marks +=[{
-        i : { 'marks': individual_subject_mark , 'grade' : grade_gen(individual_subject_mark)}
+        i : { 'marks': subject_mark , 'grade' : grade_gen(subject_mark)}
     }]
     
 grade = pointer(marks)/no_of_subjects
