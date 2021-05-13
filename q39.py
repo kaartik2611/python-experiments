@@ -24,7 +24,9 @@ for i in range(0,20,2):
     print(i**2)
 
 # Sets    
-# Sets are used to store multiple items in a single variable.Set cannot have duplicates.Sets can have mixed datatypes.
+# Sets are used to store multiple items in a single variable
+# Set cannot have duplicates.Sets can have mixed datatypes.
+
 # 1)Remove duplicates form a list
 list = [1,2,3,4,5,1,2,3123,21,312,3,2323,21,313,13,2,2,1,1,2,3,4,4]
 newlist = set(list)
@@ -42,9 +44,9 @@ print(new_set)
 
 string = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, iste.'
 
-print(string.capitalize()) # capitalizes first char
-print(string.split('a')) #splits string for given value and returns list
-print(string.title()) # capitalizes first char of every word
-print(string.find('I')) # searches for give value in string and returns bool
-print(string.index('n')) # Searches the string for a specified value and returns the position of where it was found
-print(string[::-1]) # string concatenation
+print(string.capitalize())    # capitalizes first char
+print(string.split('a'))      # splits string for given value and returns list
+print(string.title())         # capitalizes first char of every word
+print(string.find('I'))       # searches for give value in string and returns bool
+print(string.index('n'))      # Searches the string for a specified value and returns the position of where it was found
+print(string[::-1])           # string concatenation
