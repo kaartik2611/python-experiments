@@ -3,8 +3,10 @@
 
 student_name = input("Enter your name: ")
 roll_no = input("Enter Your Roll Number: ")
-marks = float(input("Enter Your 12th Percentage: "))
-if marks >= 40 :
+marks = list(map(int,input("\nEnter the marks in each subject : ").strip().split()))[:5]
+print(marks)
+percentage = sum(marks)/5
+if percentage >= 40 :
     print("You are eligible for admission.")
 else:
     print("You are not eligible for admission.")
