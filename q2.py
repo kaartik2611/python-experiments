@@ -17,21 +17,21 @@ while True:
         n1 = float(input("Enter n1: "))
         n2 = float(input("Enter n2: "))
         n3 = n1 + n2
-        print("the sum of {} and {} is {}".format(n1,n2,n3)) # for format reference :https://www.geeksforgeeks.org/python-format-function/
+        print(" {} added to {} is {}".format(n1,n2,n3)) # for format reference :https://www.geeksforgeeks.org/python-format-function/
         print("")
 
     if choice == 2:
         n1 = float(input("Enter n1: "))
         n2 = float(input("Enter n2: "))
         n3 = n1 - n2
-        print("the sum of {} and {} is {}".format(n1,n2,n3))
+        print("{} subtracted by {} is {}".format(n1,n2,n3))
         print("")
 
     if choice == 3:
         n1 = float(input("Enter n1: "))
         n2 = float(input("Enter n2: "))
         n3 = n1 * n2
-        print("the sum of {} and {} is {}".format(n1,n2,n3))
+        print("{} multiplied by {} is {}".format(n1,n2,n3))
         print("")
 
     if choice == 4:
@@ -39,7 +39,7 @@ while True:
         n2 = float(input("Enter n2: "))
         try:
             n3 = n1 / n2
-            print("the sum of {} and {} is {}".format(n1,n2,n3))
+            print("{} divided by {} is {}".format(n1,n2,n3))
             print("")
         except ZeroDivisionError:
             print("Unable to divide by zero.")
