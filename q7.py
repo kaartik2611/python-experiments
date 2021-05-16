@@ -4,7 +4,7 @@
 # Note : Install numpy using cmd
 # pip install numpy 
 
-import numpy as np 
+import numpy as np
 
 dimension = int(input('Enter dimension of Matrix: '))
 
@@ -31,13 +31,13 @@ while True:
         print(f'The transpose of matrix 1 is : \n {arr1.transpose()}')
         print(f'The transpose of matrix 2 is : \n {arr2.transpose()}')
     
-    if choice == 2:
+    elif choice == 2:
         print(f'The sum of the matrices are : \n {np.add(arr1,arr2)}')
 
-    if choice == 3:
+    elif choice == 3:
         print(f'The product of the matrices are : \n {np.matmul(arr1,arr2)}')
 
-    if choice == 4 :
+    elif choice == 4 :
         print("Thanks for using.")
         break
     
