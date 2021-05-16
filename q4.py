@@ -11,30 +11,23 @@ while True:
     except ValueError:
         print("Try entering a valid number")
         break
-    
+
     if choice == 1:
         fruit_name = input("Enter name of available fruit: ")
         fruit_price = int(input("Enter Price of Fruit: "))
-        fruit_quantity = int(input("Enter Fruit Quantity in kg: "))
-        stock[fruit_name] = {}
-        stock[fruit_name]['Price'] =  fruit_price
-        stock[fruit_name]['Quantity'] = fruit_quantity
-        print("Data added succesfully")
-        print('')      
+        stock[fruit_name] = fruit_price # adding the fruit name and price as key value pair
+        print(stock)
+        print('')
 
-    elif choice == 2:
-        c=0
-        for i in stock.values():
-            c+=i['Price']*i['Quantity']
-        print("Total Value of fruit market is \u20B9{}.".format(c))
+    if choice == 2:
+        print("Total Value of fruit market is \u20B9{}.".format(sum(stock.values())))
         print('')
     
-    elif choice == 3:
+    if choice == 3:
         print("Thanks for using.")
-        
+        break
+    
     else:
         print("Wrong Choice")
         print("Please try again")
         print("")
-        
-        
