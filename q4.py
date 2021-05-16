@@ -19,11 +19,11 @@ while True:
         print(stock)
         print('')
 
-    if choice == 2:
+    elif choice == 2:
         print("Total Value of fruit market is \u20B9{}.".format(sum(stock.values())))
         print('')
     
-    if choice == 3:
+    elif choice == 3:
         print("Thanks for using.")
         break
     

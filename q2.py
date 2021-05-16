@@ -20,21 +20,21 @@ while True:
         print(" {} added to {} is {}".format(n1,n2,n3)) # for format reference :https://www.geeksforgeeks.org/python-format-function/
         print("")
 
-    if choice == 2:
+    elif choice == 2:
         n1 = float(input("Enter n1: "))
         n2 = float(input("Enter n2: "))
         n3 = n1 - n2
         print("{} subtracted by {} is {}".format(n1,n2,n3))
         print("")
 
-    if choice == 3:
+    elif choice == 3:
         n1 = float(input("Enter n1: "))
         n2 = float(input("Enter n2: "))
         n3 = n1 * n2
         print("{} multiplied by {} is {}".format(n1,n2,n3))
         print("")
 
-    if choice == 4:
+    elif choice == 4:
         n1 = float(input("Enter n1: "))
         n2 = float(input("Enter n2: "))
         try:

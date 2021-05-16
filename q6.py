@@ -4,8 +4,8 @@ lst = list(map(int,input("Enter the numbers in the list : ").split())) # add num
 n = int(input("Enter Number to be searched: "))
 for i in lst:
     if n in lst:
-        print('{} is present in the list:{}.'.format(n,lst))
+        print('{} is present in the list at index {}.'.format(n,lst.index(n)))
         break
     else:
-        print('{} is not present in the list:{}.'.format(n,lst))
+        print('{} is not present in the list.'.format(n))
         break
